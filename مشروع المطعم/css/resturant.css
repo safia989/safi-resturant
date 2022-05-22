@@ -216,7 +216,8 @@
     /* start landing */
  .landing{
      min-height: 100vh; /*to full the screen */
-     background-color: #F5F5F5;  /*اذا صار الشي والصورة ما ظهرت بيطلع بدالها هذا اللون */
+     background-color: #F5F5F5; 
+   /*اذا صار الشي والصورة ما ظهرت بيطلع بدالها هذا اللون */
      /* background-image: url(../images/landing.jpg); */
      /* background-size: cover; */
        /* position: relative; */
@@ -239,19 +240,29 @@
  width: 50;
  padding: 50px;
  background-color: white;
+ 
  color: white;
  display: flex; /*لازم أسزيها قبل علشان تشتغل الخاصية مال justify-content */
  justify-content: flex-end;   /*كأنه محاذاة بإتجاه اليمين */
  }
  .landing .text .content {
  max-width: 500px;
+
  }
+
   @media (max-width:767px){ /*من بعدة يبدأ حجم الهاتف */
      .landing .text{
          max-width: 100%;
+         margin-top: -80px;
+    border-radius: 5px;
+    border: 2px solid green;
      }  
      .landing .text .content {
          max-width: 100%;
+     }
+     .landing{
+      background-image: url(../images/tt.jpg);
+      background-size: cover;
      }
  
  }
